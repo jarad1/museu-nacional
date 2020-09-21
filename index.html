@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./public/images/museu.png" type="image/png">
+    <title>Museu Nacional</title>
+
+    <link rel="stylesheet" href="./public/styles/main.css">
+    <link rel="stylesheet" href="./public/styles/normalize.css">
+
+    <!-- [if lt IE 9] >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <! [endif] -->
+</head>
+<body>
+    <div id="container">
+
+        <header>
+            <div id="logo">
+                <h1><a href="">Museu Nacional</a></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Exposições</a></li>
+                    <li><a href="">Pesquisa</a></li>
+                    <li><a href="">Acervo</a></li>
+                    <li><a href="">Vídeos</a></li>
+                    <li><a href="">Fotos</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+
+        <div id="principal">
+            <div id="conteudo">
+                <section id="capa">
+                    <img src="./public/images/museu.png" alt="Museu nacional entrada principal" >
+                </section>
+                
+                <section id="post">
+                    <article id="video">
+                        <h3>Vídeo: Conheça o Museu</h3>
+                        <iframe width="310" height="170" src="https://www.youtube-nocookie.com/embed/1wC4M8wKUo0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+
+                    <article id="mapa">
+                        <h3>Mapa: Encontre o Museu</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.825245036422!2d-43.2265289!3d-22.90576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1600656023049!5m2!1spt-BR!2sbr" width="310" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </article>
+
+                    <article id="exposicoes">
+                        <h3>Exposições</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Os assustadores insetos</a>
+                            </li>
+                            <li>
+                                <a href="#">O crânio de luzia, a mulher mais antiga do Brasil</a>
+                            </li>
+                            <li>
+                                <a href="#">Preguiça gigante e Tigre-dentes-de-sabre</a>
+                            </li>
+                            <li>
+                                <a href="#">Plantas o Brasil Central</a>
+                            </li>
+                            <li>
+                                <a href="#reference">Tereza Crostin: A Imperatiz Arqueóloga</a>
+                            </li>
+                            <li>
+                                <a href="#gallery"><strong>Veja todos (75)</strong></a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article id="history">
+                        <h3>200 anos de história</h3>
+                        <p>
+                            Numa ponta que avançava sobre o mar, posteriormente conhecida com Ponta do Calabouço, entre as praias de Piaçava e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses constrúiram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Nacional.
+                        </p>
+                        <p>
+                            Em 2 de setembro de 2018, logo após o encerramento do horário de visitação, um incêndio de grandes proporções atingiu todos os três andares do prédio do Museu Nacional, na Quinta da Boa Vista. Os bombeiros foram acionados às 19h30, chegando rapidamente ao local. Às 21 horas o fogo encontrava-se fora de controle, com grandes labaredas e estrondos ocasionais,] sendo combatido por bombeiros de vinte quartéis. Dezenas de pessoas dirigiram-se à Quinta da Boa Vista para ver o incêndio.
+                        </p>                    
+                        <a href="#"><strong>Leia mais</strong></a>
+                    </article>
+                </section>
+
+            </div>
+
+            <aside>
+                <section id="reference">
+                    <img src="./public/images/depoimento.png" alt="Museu Nacional criado em 1922 , é um dos mais importantes museus do Brasil, reunindo um acervo de mais de 250.000 itens. - Direção do museu">
+                </section>
+
+                <section id="visit">
+                    <h4>Faça uma visita</h4>
+                    <form action="/save-visit" id="book-visit">
+                        <fieldset id="cad-visit">
+                            <legend id="select-time">Selecione uma data</legend>
+
+                            <label for="time">Data:</label>
+                            <input class="field" type="text" id="time" value="dd/mm/aaaa">
+
+                            <label for="visitors">Quantidade de pessoas:</label>
+                            <input class="field" style="width: 10px;" type="text" id="visitors" value="1">
+                        </fieldset>
+
+                        <input class="button" type="submit" value="Verificar Disponibilidade">
+                    </form>
+                </section>
+
+                <section id="gallery">
+                    <h4>Galeria de fotos</h4>
+                    <a href="">
+                        <img src="./public/images/imagem1.jpg" alt="" height="93" width="93">
+                    </a>
+
+                    <a href="">
+                        <img src="./public/images/imagem2.jpg" alt="" height="93" width="93">
+                    </a>
+
+                    <a href="">
+                        <img src="./public/images/imagem3.jpg" alt="" height="93" width="93">
+                    </a>
+
+                    <a href="">
+                        <img src="./public/images/imagem4.jpg" alt="" height="93" width="93">
+                    </a>
+
+                </section>
+
+            </aside>
+
+            <div style="clear: both;"></div>
+
+        </div>
+        <footer>
+            <p>
+                <a href="#">Home</a>
+                <a href="#">Exposições</a>
+                <a href="#">Pesquisa</a>
+                <a href="#">Acervo</a>
+                <a href="#">Vídeos</a>
+                <a href="#">Fotos</a>
+                <a href="#">Contato</a>
+            </p>
+            <p>
+                2020 <a href="#logo">Museu Nacional</a> - Todos os direitos reservados.
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
